@@ -330,8 +330,12 @@ export default function Home() {
         <a href="mailto:hello@zenvaio.com">Book a Free Strategy Call →</a>
       </div>
 
-      {/* NAV */}
-      <nav className={`zv-nav${navScrolled ? " scrolled" : ""}`} id="mainNav">
+      {/* NAV - FIXED POSITION TO ELIMINATE BLACK SPACE */}
+      <nav 
+        className={`zv-nav${navScrolled ? " scrolled" : ""}`} 
+        id="mainNav"
+        style={{ position: 'fixed', top: '40px', left: 0, right: 0, zIndex: 1000, background: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(20px)' }}
+      >
         <a href="#" className="nav-logo">
           <svg
             className="nav-logo-icon"
@@ -529,8 +533,8 @@ export default function Home() {
         </a>
       </div>
 
-      {/* ────────── HERO ────────── */}
-      <section className="hero">
+      {/* ────────── HERO - TIGHTENED SPACING ────────── */}
+      <section className="hero" style={{ paddingTop: '100px', marginTop: 0 }}>
         <div className="hero-orb-1" />
         <div className="hero-orb-2" />
         <div className="hero-orb-3" />
