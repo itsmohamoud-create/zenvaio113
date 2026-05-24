@@ -251,9 +251,9 @@ body::before {
 /* ===================== HERO ===================== */
 .hero {
   background: var(--black);
-  padding: 0px 64px 80px;
+  padding: 80px 64px 80px;
   text-align: center; position: relative; overflow: hidden;
-  min-height: auto; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  display: flex; flex-direction: column; align-items: center;
 }
 
 /* Animated radial bg */
@@ -911,7 +911,7 @@ body::before {
   .zv-nav { padding: 0 24px; }
   .nav-center { position: static; transform: none; display: none; }
   .hamburger { display: flex; }
-  .hero { padding: 0px 24px 60px; min-height: auto; }
+  .hero { padding: 48px 24px 60px; }
   .hero h1 { font-size: 34px; }
   .hero-stats { flex-direction: row; flex-wrap: wrap; }
   .stat-item { min-width: 50%; border-right: none; }
